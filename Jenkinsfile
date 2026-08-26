@@ -13,7 +13,7 @@
             }
             stage('java test') {
                 steps {
-                sh 'java -cp target/Wednesday-1.0-SNAPSHOT.jar'
+                sh 'java -cp target/Wednesday-1.0-SNAPSHOT.jar com.wednesday.App'
                 }
             }
         }
