@@ -11,12 +11,7 @@
                     sh 'mvn --version'
                 }
             }
-            stage('java build') {
-                steps {
-                    sh 'mvn clean package'
-                }
-            }
-            stage('java test') {
+             stage('java test') {
                 steps {
                 sh 'java -cp target/Wednesday-1.0-SNAPSHOT.jar wed'
                 }
