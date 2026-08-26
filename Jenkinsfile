@@ -10,7 +10,7 @@
                 steps {
                     sh 'mvn --version'
                 }
-            
+            }
             stage('java build') {
                 steps {
                     sh 'mvn clean package'
